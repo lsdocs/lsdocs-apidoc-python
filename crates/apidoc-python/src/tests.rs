@@ -264,14 +264,16 @@ async fn documents_a_package_with_references() {
     );
     let page = ".. py:currentmodule:: shapes\n\nSee :py:func:`area` and :py:meth:`Circle.grow`.\n\n.. py:auto:: shapes.util.helper\n";
     let plugin = plugin();
-    let init = InitializeParams {
-        site: SiteInfo {
-            root: Some(dir.to_string_lossy().into_owned()),
-            ..SiteInfo::default()
+    let init = lsdocs_plugin_sdk::Setup::with_settings(
+        InitializeParams {
+            site: SiteInfo {
+                root: Some(dir.to_string_lossy().into_owned()),
+                ..SiteInfo::default()
+            },
+            ..InitializeParams::default()
         },
-        options: json!({"paths": ["src/shapes"]}),
-        ..InitializeParams::default()
-    };
+        json!({"paths": ["src/shapes"]}),
+    );
     let declared = plugin.capabilities_for(&init).syntax;
     let (guide, diagnostics) = lsdocs_parser_rst::parse("guide.rst", page, None, &declared);
     assert!(diagnostics.is_empty(), "{diagnostics:?}");
