@@ -73,6 +73,10 @@ impl Language for Python {
         "python"
     }
 
+    fn settings(&self) -> &[&str] {
+        &["paths"]
+    }
+
     fn doc_format(&self) -> &str {
         "rst"
     }
