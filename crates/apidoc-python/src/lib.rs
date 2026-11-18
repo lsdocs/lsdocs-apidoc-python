@@ -9,7 +9,12 @@
 //! [[plugins]]
 //! name = "python"
 //! builtin = "apidoc-python"
-//! options = { paths = ["src/mypkg"] }
+//! ```
+//!
+//! with its settings in `.config/lsdocs/python/settings.toml`:
+//!
+//! ```toml
+//! paths = ["src/mypkg"]
 //! ```
 //!
 //! - **Paths** (relative to the site directory): a directory is a package
@@ -36,7 +41,7 @@
 //!   `py:class`, `py:attr`, `py:data`, `py:const`, `py:exc`, `py:mod`,
 //!   `py:type`, `py:obj`.
 //!
-//! Options: `paths` (required for generated pages) and those of the
+//! Settings: `paths` (required for generated pages) and those of the
 //! framework (`output`, `private`, `title`, `doc_format`, `doc_style`,
 //! `generate`).
 
