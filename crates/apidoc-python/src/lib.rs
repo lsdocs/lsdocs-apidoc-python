@@ -78,8 +78,9 @@ impl Language for Python {
         "python"
     }
 
-    fn settings(&self) -> &[&str] {
-        &["paths"]
+    fn settings(&self) -> &[(&str, lsdocs_plugin_sdk::config::Kind)] {
+        use lsdocs_plugin_sdk::config::Kind;
+        &[("paths", Kind::Array)]
     }
 
     fn doc_format(&self) -> &str {
