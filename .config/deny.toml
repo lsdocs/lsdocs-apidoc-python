@@ -31,7 +31,8 @@ wildcards = "deny"
 allow-wildcard-paths = true
 # Proc-macros still on syn 2 (the rest of the graph is on syn 3).
 skip-tree = [
-    { crate = "is-macro@0.3", reason = "ruff_python_ast; goes away when apidoc-python is rewritten in Python" },
+    # Lift when this plugin is rewritten in Python (no more ruff crates).
+    { crate = "is-macro@0.3", reason = "ruff_python_ast" },
 ]
 
 [sources]
