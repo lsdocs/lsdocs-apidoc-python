@@ -21,7 +21,7 @@ lsdocs-apidoc-plugin = { git = "https://github.com/lsdocs/lsdocs-apidoc", branch
 
 serde = { version = "1.0.229", features = ["derive"] }
 # Ruff's Python parser: internal crates of Ruff, so pinned exactly.
-ruff_python_ast = "=0.0.22"
+ruff_python_ast = "=0.0.23"
 ruff_python_parser = "=0.0.22"
 ruff_text_size = "=0.0.22"
 serde_json = "1.0.154"
