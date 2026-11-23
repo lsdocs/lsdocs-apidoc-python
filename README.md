@@ -5,7 +5,7 @@ parsers, transformers and renderers are plugins.
 
 `crates/apidoc-python` (`lsdocs-apidoc-python`, builtin `apidoc-python`):
 documents Python packages from their source with ruff's parser (no Python
-runtime), in the `py` domain. Its MSRV is 1.97 (ruff's crates).
+runtime), in the `py` domain. Its MSRV is 1.98 (ruff's crates).
 
 The plugin's settings and output are described in the lsdocs
 documentation (https://lsdocs.github.io, "apidoc-python").
