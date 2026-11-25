@@ -282,7 +282,7 @@ async fn documents_a_package_with_references() {
         &init,
         vec![
             lsdocs_parser_rst::plugin(),
-            lsdocs_parser_markdown::plugin(),
+            lsdocs_parser_markdown::myst::plugin(),
         ],
     );
     let out = run_transform_in(&plugin, &ctx, vec![guide]).await.unwrap();
