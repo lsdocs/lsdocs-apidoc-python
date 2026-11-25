@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1](https://github.com/lsdocs/lsdocs-apidoc-python/compare/lsdocs-apidoc-python/v0.1.0...lsdocs-apidoc-python/v0.1.1) - 2026-11-25
+
+### Other
+
+- parse generated pages with the parser-myst dialect ([#16](https://github.com/lsdocs/lsdocs-apidoc-python/pull/16))
+
 ## [0.1.0](https://github.com/lsdocs/lsdocs-apidoc-python/releases/tag/lsdocs-apidoc-python/v0.1.0) - 2026-11-23
 
 ### Added
